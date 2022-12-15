@@ -1,0 +1,103 @@
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 3rem;
+}
+
+.container > *{
+  min-width: 25rem;
+  max-width: 40rem;
+}
+
+img{
+  border-radius: 3rem;
+  flex: 1 0;
+  object-fit: cover;
+  height: 27rem;
+  margin: 1rem;
+}
+
+.detalhes{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0;
+  border-radius: 3rem;
+  padding: 2rem;
+  color: black;
+  margin-left: 1rem;
+}
+
+.cabecalho{
+  display: flex;
+  justify-content: space-between;
+}
+
+.nome{
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.favorito{
+  color: #e72929;
+  font-size: 2.5rem;
+}
+
+.favorito.not{
+  color: grey;
+}
+
+.origem{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+}
+
+.origem > span {
+  padding: .5rem;
+  font-size: 1.2rem;
+  border-radius: 2rem;
+  background-color: aliceblue;
+}
+
+.origemETag{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tempoDePreparo{
+  padding: .6rem 2rem .6rem 0;
+  border-radius: 10rem;
+  font-size: 1.3rem;
+}
+
+.preco{
+  font-size: 1.8rem;
+  margin: 2rem 2rem 2rem 0;
+  color: green;
+
+}
+
+.preco::before{
+  content: 'Preço:';
+  color: darkgray;
+}
+
+button{
+  color: white;
+  background-color: #e72929;
+  border: none;
+  font-size: 1.2rem;
+  padding: 1rem;
+  border-radius: 10rem;
+  outline: none;
+}
+
+button:hover{
+  opacity: .9;
+  cursor: pointer;
+}

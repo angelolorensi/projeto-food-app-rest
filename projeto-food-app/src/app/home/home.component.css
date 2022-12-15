@@ -1,0 +1,68 @@
+ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+}
+
+li a {
+  height: 20rem;
+  width: 20rem;
+  border: 1px solid whitesmoke;
+  border-radius: 1rem;
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: #e72929;
+}
+
+li a:hover{
+  opacity: 90%;
+  cursor: pointer;
+}
+
+.conteudo{
+  padding: .5rem 1rem;
+  position: relative;
+}
+
+.favorito{
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  font-size: 1.2rem;
+}
+
+.favorito.nao{
+  color: gray;
+}
+
+.footer-produto{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.origem{
+  flex: 9;
+  border-radius: 2rem;
+  background-color: whitesmoke;
+  display: inline-block;
+  font-size: .7rem;
+  margin-right: .3rem;
+  color: grey;
+}
+
+.tempoDePreparo{
+  font-size: .8rem;
+  flex: 3;
+  text-align: right;
+}
+
+.preco{
+  color: #414141;
+  margin-top: 0.7rem;
+}

@@ -1,0 +1,20 @@
+
+<app-busca></app-busca>
+<app-tags></app-tags>
+<app-not-found [visivel]="!comidas || comidas.length <= 0" resetLink="Voltar a Home"></app-not-found>
+<ul>
+  <li *ngFor="let comida of comidas">
+    <a routerLink="/comida/{{comida.id}}">
+      <img src="{{ comida.imageUrl }}" alt="" />
+      <div class="conteudo">
+        <div class="nome">{{ comida.nome }}</div>
+        <span class="favorito {{comida.favorito?'':'nao'}}">❤</span>
+        <div class="footer-produto">
+          <div class="origem">Origem: {{ comida.origem }}</div>
+          <div class="tempoDePreparo">🕜 {{ comida.tempoDePreparo }} mins</div>
+        </div>
+        <div class="preco">{{ comida.preco | currency : "R$" }}</div>
+      </div>
+    </a>
+  </li>
+</ul>
